@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conceptos de Datos y Bases de Datos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+     
+      
+        h1, h2 {
+            color: #333;
+        }
+        .content {
+            padding: 20px;
+            background: #fff;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Conceptos de Datos y Bases de Datos</h1>
+        </div>
+    </header>
+    <div class="container">
+        <div class="content">
+            <h2>1. ¿Qué es un Dato?</h2>
+            <p>Un dato es una representación simbólica de una realidad o evento, que puede ser cuantitativo o cualitativo. Los datos pueden ser números, letras, imágenes, sonidos, etc., que en su forma aislada no tienen significado por sí mismos hasta que se interpretan en un contexto específico.</p>
+
+            <h2>2. ¿Qué es información?</h2>
+            <p>La información es un conjunto de datos procesados, organizados y contextualizados de tal manera que adquieren significado y son útiles para la toma de decisiones. La información proporciona conocimiento y comprensión sobre un tema o situación.</p>
+
+            <h2>3. Diferencia entre dato e información</h2>
+            <p><strong>Dato:</strong> Es una representación cruda y sin procesar de hechos o conceptos.</p>
+            <p><strong>Información:</strong> Es el resultado de procesar y organizar datos de manera que se vuelvan útiles y significativos.</p>
+
+            <h2>4. Tipos de datos</h2>
+            <ul>
+                <li><strong>Datos cualitativos:</strong> Describen cualidades o características y no se pueden medir con números (ej. color, textura).</li>
+                <li><strong>Datos cuantitativos:</strong> Se pueden medir y expresar con números (ej. altura, peso).</li>
+                <li><strong>Datos estructurados:</strong> Tienen un formato predefinido y organizado (ej. tablas en una base de datos).</li>
+                <li><strong>Datos no estructurados:</strong> No tienen un formato específico ni organizado (ej. correos electrónicos, videos).</li>
+            </ul>
+
+            <h2>5. ¿Qué es un modelado de Datos?</h2>
+            <p>El modelado de datos es el proceso de crear un modelo para estructurar y organizar los datos de manera que representen correctamente la realidad del negocio o dominio de interés. Este modelo puede ser conceptual, lógico o físico y sirve como un mapa que guía el diseño y la implementación de sistemas de bases de datos.</p>
+
+            <h2>6. Tipos de bases de Datos, según:</h2>
+            <h3>Variabilidad</h3>
+            <ul>
+                <li><strong>Bases de datos estáticas:</strong> Los datos no cambian con el tiempo o cambian muy poco.</li>
+                <li><strong>Bases de datos dinámicas:</strong> Los datos se actualizan y cambian con frecuencia.</li>
+            </ul>
+            <h3>Contenido</h3>
+            <ul>
+                <li><strong>Bases de datos bibliográficas:</strong> Contienen referencias a documentos o publicaciones.</li>
+                <li><strong>Bases de datos de texto completo:</strong> Contienen el texto completo de los documentos.</li>
+                <li><strong>Bases de datos numéricas:</strong> Contienen datos numéricos o cuantitativos.</li>
+                <li><strong>Bases de datos multimedia:</strong> Contienen imágenes, audio, video, etc.</li>
+            </ul>
+            <h3>Modelo de base de datos</h3>
+            <ul>
+                <li><strong>Bases de datos jerárquicas:</strong> Organizadas en una estructura de árbol.</li>
+                <li><strong>Bases de datos de red:</strong> Estructura más flexible que permite múltiples relaciones entre datos.</li>
+                <li><strong>Bases de datos relacionales:</strong> Organizadas en tablas con relaciones definidas entre ellas.</li>
+                <li><strong>Bases de datos orientadas a objetos:</strong> Almacenan datos como objetos, similar a la programación orientada a objetos.</li>
+                <li><strong>Bases de datos NoSQL:</strong> Diseñadas para manejar grandes volúmenes de datos no estructurados.</li>
+            </ul>
+
+            <h2>7. ¿Qué es el modelo relacional?</h2>
+            <p>El modelo relacional es un enfoque para gestionar bases de datos en el cual los datos se organizan en tablas (relaciones). Cada tabla está compuesta por filas (tuplas) y columnas (atributos). Las tablas pueden estar relacionadas entre sí mediante llaves primarias y foráneas, facilitando la integridad y consistencia de los datos.</p>
+
+            <h2>8. Describa los elementos del Diagrama entidad Relacional</h2>
+            <ul>
+                <li><strong>Entidad:</strong> Un objeto del mundo real o un concepto que tiene existencia independiente y se puede identificar de manera única.</li>
+                <li><strong>Atributo:</strong> Una característica o propiedad de una entidad.</li>
+                <li><strong>Relación:</strong> Una asociación entre dos o más entidades.</li>
+                <li><strong>Llave primaria:</strong> Un atributo o conjunto de atributos que identifica de manera única a una entidad en una tabla.</li>
+                <li><strong>Llave foránea:</strong> Un atributo en una tabla que hace referencia a la llave primaria de otra tabla para establecer una relación entre las dos.</li>
+            </ul>
+
+            <h2>9. ¿Qué es una entidad?</h2>
+            <p>Una entidad es cualquier objeto o concepto que puede ser identificado de manera única en un dominio de datos. Puede ser una persona, un lugar, un objeto, un evento o incluso un concepto abstracto.</p>
+
+            <h2>10. ¿Qué es un atributo y sus tipos?</h2>
+            <p>Un atributo es una característica o propiedad de una entidad. Los tipos de atributos pueden incluir:</p>
+            <ul>
+                <li><strong>Atributo simple:</strong> No se puede dividir en subcomponentes más pequeños (ej. número de teléfono).</li>
+                <li><strong>Atributo compuesto:</strong> Puede dividirse en subcomponentes (ej. dirección: calle, ciudad, código postal).</li>
+                <li><strong>Atributo derivado:</strong> Su valor se calcula a partir de otros atributos (ej. edad calculada a partir de la fecha de nacimiento).</li>
+                <li><strong>Atributo multivaluado:</strong> Puede tener múltiples valores (ej. números de teléfono de una persona).</li>
+            </ul>
+
+            <h2>11. ¿Qué es una relación?</h2>
+            <p>Una relación es una asociación entre dos o más entidades que define cómo están conectadas. Por ejemplo, una relación puede indicar que un empleado trabaja en un departamento o que un cliente realiza un pedido.</p>
+
+            <h2>12. ¿Qué son las llaves primarias, foránea y sus características?</h2>
+            <p><strong>Llave primaria:</strong> Un atributo o conjunto de atributos que identifica de manera única a una entidad en una tabla. Debe ser única, no nula y constante.</p>
+            <p><strong>Llave foránea:</strong> Un atributo en una tabla que es la llave primaria en otra tabla. Establece una relación entre las dos tablas y garantiza la integridad referencial.</p>
+
+            <h2>13. ¿Qué son las reglas del Negocio?</h2>
+            <p>Las reglas del negocio son restricciones, condiciones o criterios que definen o restringen aspectos del negocio. Guían el comportamiento del sistema y aseguran que los datos sean consistentes y válidos de acuerdo con las políticas y objetivos del negocio.</p>
+
+            <h2>14. ¿Qué es la cardinalidad o mapeo?</h2>
+            <p>La cardinalidad o mapeo define el número de instancias de una entidad que pueden o deben estar asociadas con una instancia de otra entidad en una relación. Los tipos comunes de cardinalidad incluyen:</p>
+            <ul>
+                <li><strong>Uno a uno (1:1):</strong> Cada instancia de una entidad se asocia con una instancia de otra entidad.</li>
+                <li><strong>Uno a muchos (1:N):</strong> Cada instancia de una entidad se asocia con múltiples instancias de otra entidad.</li>
+                <li><strong>Muchos a muchos (M:N):</strong> Múltiples instancias de una entidad se asocian con múltiples instancias de otra entidad.</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
